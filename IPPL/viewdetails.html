@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="viewdetails.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Product Details</h1>
+            <a href="dashboard.html">Dashboard</a>
+        </header>
+        <div class="product-details" id="product-details">
+        </div>
+    </div>
+
+    <div id="edit-stock-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditStockModal()">&times;</span>
+            <h2>Edit Stock</h2>
+            <form id="edit-stock-form">
+                <label for="new-stock">New Stock:</label>
+                <input type="number" id="new-stock" name="stock" required min="1" step="1">
+                <button type="submit">Update Stock</button>
+            </form>
+        </div>
+    </div>
+    <div id="delete-product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDeleteProductModal()">&times;</span>
+            <h2>Are you sure want to delete this product?</h2>
+            <div class="actions">
+                <button onclick="confirmDeleteProduct()">Yes, Delete</button>
+                <button onclick="closeDeleteProductModal()">No, Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="viewdetails.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="AddProduct.css">
+    <script src="addproduct.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Add Product</h1>
+            <a href="dashboard.html" class="dashboard-link">Dashboard</a>
+        </header>
+        <form id="add-product-form" action="addproduct.php" method="post" enctype="multipart/form-data" class="add-product-form">
+            <div class="form-group">
+                <label for="product-name">Product Name *</label>
+                <input type="text" id="product-name" name="product-name" required>
+            </div>
+            <div class="form-group">
+                <label for="code">Code *</label>
+                <input type="text" id="code" name="code" required>
+            </div>
+            <div class="form-group">
+                <label for="composition">Composition</label>
+                <input type="text" id="composition" name="composition">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="side-effects">Side Effects</label>
+                <textarea id="side-effects" name="side-effects"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="expired">Expired</label>
+                <input type="date" id="expired" name="expired">
+            </div>
+            <div class="form-group">
+                <label for="stock-product">Stock Product *</label>
+                <input type="number" id="stock-product" name="stock-product" min="0" required>
+                <p class="error-message" id="stock-error" style="color: red; display: none;">Stock cannot be negative.</p>
+            </div>
+            <div class="form-group">
+                <label for="category">Category *</label>
+                <input type="text" id="category" name="category" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price *</label>
+                <input type="number" id="price" name="price" min="0" required>
+                <p class="error-message" id="price-error" style="color: red; display: none;">Price cannot be negative.</p>
+            </div>
+            <div class="form-group">
+                <label for="image-upload">Upload Image *</label>
+                <div class="image-upload">
+                    <input type="file" id="image-upload" name="image" accept="image/*" required>
+                </div>
+            </div>
+            <button type="submit" class="btn-add-product">Add Product</button>
+        </form>
+    </div>
+</body>
+</html>

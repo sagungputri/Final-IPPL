@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP | MedWare</title>
+    <link rel="stylesheet" href="otp.css">
+    <script src="otp.js"></script>
+
+</head>
+<body>
+    <div class="otp-container">
+        <div class="otp-box">
+            <div class="otp-image">
+                <img src="img/gambar-otp.png" alt="Email Verification">
+            </div>
+            <h2>Almost there!</h2>
+            <p>Please enter the verification code that was sent to your email</p>
+
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" class="otp-input">
+                <input type="text" maxlength="1" class="otp-input">
+                <input type="text" maxlength="1" class="otp-input">
+                <input type="text" maxlength="1" class="otp-input">
+                <input type="text" maxlength="1" class="otp-input">
+                <input type="text" maxlength="1" class="otp-input">
+            </div>
+    
+            <p class="error-message" style="display: none; color: red; font-size: 14px;">Invalid OTP, please try again.</p>
+    
+            <button class="verify-button">Verify code</button>
+        </div>
+    </div>
+</body>
+</html>

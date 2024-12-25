@@ -1,0 +1,47 @@
+<!-- tidak jadi make-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedWare Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">MedWare</h1>
+            <span class="dashboard">Dashboard</span>
+            <div class="profile">
+                <img src="/img/sliders1.png" alt="Settings Icon" class="icon">
+                <img src="/img/bell.png" alt="Notification Icon" class="icon">
+                <span>ApotekSejahtera21</span>
+                <img src="/img/profile1.png" alt="Profile Icon" class="profile-icon">
+            </div>
+        </header>
+
+        <main class="profile-container">
+            <section class="profile-section">
+                <h2 class="profile-title">Profile</h2> 
+                <div class="profile-content">
+                    <div class="profile-pic">
+                        <img src="/img/profile.png" alt="Profile Picture">
+                        <button class="edit-pic-btn">✏️</button>
+                    </div>
+                     <!-- ini gajadi dipake sii-->
+                    <form class="profile-form">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" value="ApotekSejahtera21">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" value="sejahtera21@gmail.com">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Enter your address">
+                        <button type="submit" class="save-btn">Save Change</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

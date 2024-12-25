@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medware Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Medware</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-button">Search</button>
+        </div>
+        
+        <div class="profile">
+            <span id="username-placeholder">Loading...</span> 
+        </div>
+        <div class="logout">
+            <button class="logout-button" onclick="location.href='logout.php';">Log out</button>
+        </div>
+        
+        
+        
+
+    </header>
+
+    <main class="content">
+        <section class="dashboard-cards">
+            <div class="card red">
+                <h2>0</h2>
+                <p>Products are </p>
+                <p>in Your Ware</p>
+                <img src="img/chart.png" alt="Warehouse Icon" class="card-icon">
+            </div>
+            <a href="addproduct.html" class="card-link">
+                <div class="card blue">
+                    <h2>ADD</h2>
+                    <p>Add new products</p>
+                    <img src="img/giving-box.png" alt="Add Icon" class="card-icon">
+                </div>
+            </a>
+            <a href="viewallproducts.html" class="card-link">
+                <div class="card purple">
+                    <h2>VIEW</h2>
+                    <p>View all products</p>
+                    <img src="img/box-list.png" alt="View Icon" class="card-icon">
+                </div>
+            </a>
+        </section>
+
+        <section class="recent-products">
+            <h2>Recent Products</h2>
+            <div class="recent-products-list" id="recent-products-list">
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
